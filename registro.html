@@ -29,7 +29,72 @@
             </nav>
         </div>
     </header>
-
+    <div class="register-container">
+        <h2>Formulario de Registro</h2>
+        <form action="/register" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
     
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+    
+            <label for="estrato">Estrato:</label>
+            <select id="estrato" name="estrato" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+    
+            <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+    
+            <label for="grupo_sanguineo">Grupo Sanguíneo:</label>
+            <select id="grupo_sanguineo" name="grupo_sanguineo" required>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select>
+    
+            <div class="radio-group">
+                <label>Género:</label>
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="femenino" name="genero" value="femenino" required>
+                <label for="femenino">Femenino</label>
+                <input type="radio" id="otro" name="genero" value="otro" required>
+                <label for="otro">Otro</label>
+            </div>
+    
+            <div class="checkbox-group">
+                <label>Actividades Favoritas:</label>
+                <input type="checkbox" id="deporte" name="actividades[]" value="deporte">
+                <label for="deporte">Deporte</label>
+                <input type="checkbox" id="lectura" name="actividades[]" value="lectura">
+                <label for="lectura">Lectura</label>
+                <input type="checkbox" id="musica" name="actividades[]" value="musica">
+                <label for="musica">Música</label>
+                <input type="checkbox" id="viajar" name="actividades[]" value="viajar">
+                <label for="viajar">Viajar</label>
+            </div>
+    
+            <button class="btn btn-primary" type="submit">Registrarse</button>
+            <a class="btn btn-primary" href="inicioDeSesion.html" role="button">Cancelar</a>
+        </form>
+    </div>
+
 </body>
 </html>
